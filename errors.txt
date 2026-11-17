@@ -1,0 +1,5 @@
+Failed run: 3
+37:e: file:///home/runner/work/salon-receipts/salon-receipts/app/src/main/java/ca/home/salonreceipts/ClaudeReader.kt:142:75 Unresolved reference 'DEFAULT_MODEL'.
+42:FAILURE: Build failed with an exception.
+44:* What went wrong:
+55:BUILD FAILED in 1m 30s
