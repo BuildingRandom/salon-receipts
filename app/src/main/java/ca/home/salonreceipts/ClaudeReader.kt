@@ -139,7 +139,7 @@ Rules:
         return when (code) {
             401 -> "The API key was rejected. Check it in Settings."
             403 -> "This API key isn't allowed to do that. Check the key in Settings."
-            404 -> "The model name in Settings wasn't found. Reset it to $DEFAULT_MODEL." + if (apiMsg.isNotBlank()) " ($apiMsg)" else ""
+            404 -> "The model name in Settings wasn't found. Reset it to ${Settings.DEFAULT_MODEL}." + if (apiMsg.isNotBlank()) " ($apiMsg)" else ""
             400 -> if (apiMsg.contains("credit", ignoreCase = true)) "Your Anthropic account is out of credit. Add credit at console.anthropic.com."
                    else "Claude couldn't accept this request: $apiMsg"
             429 -> "Too many requests or a spending limit was reached. Wait a minute and try again."
